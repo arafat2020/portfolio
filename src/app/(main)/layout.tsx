@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import FloatingNav from './_components/FloatingNav'
+import {} from ''
 
 function MainLayout({children}:{children:React.ReactNode}) {
   return (
