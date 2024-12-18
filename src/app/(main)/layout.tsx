@@ -1,14 +1,20 @@
 "use client"
 import React from 'react'
 import FloatingNav from './_components/FloatingNav'
-import {} from ''
+import { AnimatePresence, motion } from 'framer-motion'
+import Transition from './_components/Transition'
+import { usePathname } from 'next/navigation'
 
-function MainLayout({children}:{children:React.ReactNode}) {
+function MainLayout({ children }: { children: React.ReactNode }) {
+  const path =  usePathname()
   return (
-    <div className='w-screen h-screen relative'>
-      <FloatingNav/>
+    <AnimatePresence mode='wait' key={path}>
+      <motion.div className='w-screen h-screen relative'>
+        <Transition/>
+        <FloatingNav />
         {children}
-    </div>
+      </motion.div>
+    </AnimatePresence>
   )
 }
 
