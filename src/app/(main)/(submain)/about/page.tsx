@@ -5,9 +5,14 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center p-4">
+    <div className="w-full h-full flex flex-col items-center justify-center p-4 relative">
+      <div style={{
+        background:"url('./pc.jpg')"
+      }}
+      className='absolute w-full h-full top-0 bottom-0 blur-md bg-center bg-cover bg-no-repeat' 
+      />
       <motion.div
-        className="flex flex-col items-center max-w-screen-md"
+        className="flex flex-col items-center max-w-screen-md z-10 bg-black/30 p-3 rounded-md shadow-md"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -36,16 +41,8 @@ function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
         >
-          I am a dedicated and passionate web developer with a strong background in creating modern,
-          responsive, and user-friendly websites and applications. My expertise lies in both frontend
-          and backend development, enabling me to deliver complete and well-rounded solutions tailored
-          to client needs. Whether it’s designing an engaging user interface or developing robust server-side
-          logic, I strive to craft seamless digital experiences that align with the latest industry standards.
-          I enjoy solving complex problems and continuously learning new technologies to enhance my skill set.
-          With a focus on scalability, performance, and usability, I aim to build web applications that not
-          only meet but exceed expectations. Collaboration and clear communication are at the core of my
-          development process, ensuring every project is executed efficiently and effectively. Let’s build
-          something amazing together!
+                    I am a passionate web developer skilled in creating modern, responsive, and user-friendly web solutions. With expertise in frontend and backend development, I deliver complete, scalable, and efficient applications. I thrive on solving challenges and staying updated with emerging technologies. Let’s build something amazing together!
+
         </motion.p>
 
         {/* Contact Information */}
