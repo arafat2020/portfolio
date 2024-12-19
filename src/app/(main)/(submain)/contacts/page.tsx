@@ -1,9 +1,15 @@
+"use client"
 import React from 'react'
+import Contact from '../../_components/Contact'
+import StarsCanvas from '../../_components/canvas/Stars'
 
-function Contact() {
+function ContactPage() {
   return (
-    <div>Contact</div>
+    <div className='w-full h-full relative z-0'>
+      <Contact/>
+      <StarsCanvas/> 
+    </div>
   )
 }
 
-export default Contact
+export default ContactPage
