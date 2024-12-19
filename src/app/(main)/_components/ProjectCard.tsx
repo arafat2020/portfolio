@@ -1,4 +1,8 @@
-import { motion } from "fra";
+import { fadeIn } from "@/lib/motion";
+import { motion } from "framer-motion";
+import { BsGithub } from "react-icons/bs";
+import { Tilt } from "react-tilt";
+
 export const ProjectCard = ({
   index,
   name,
@@ -6,6 +10,16 @@ export const ProjectCard = ({
   tags,
   image,
   source_code_link,
+}:{
+  index:any,
+  name: string,
+  description: string,
+  tags: {
+    name:string,
+    color: string
+  }[],
+  image: string,
+  source_code_link: string,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -15,7 +29,7 @@ export const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-slate-800 shadow-md p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -29,10 +43,8 @@ export const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
+              <BsGithub
+                className='w-1/2 h-1/2'
               />
             </div>
           </div>

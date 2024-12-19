@@ -33,7 +33,7 @@ function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          Hi, I'm Arafat Mannan
+          Hi, I&apos;m Arafat Mannan
         </motion.h1>
         <motion.p
           className="text-center text-lg leading-relaxed"
