@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
-import { Tilt } from "react-tilt";
 import { ProjectCard } from "../../_components/ProjectCard";
 import { SparkleHeading } from "../../_components/Sparklejeading";
 

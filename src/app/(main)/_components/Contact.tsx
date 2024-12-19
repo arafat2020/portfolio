@@ -9,7 +9,7 @@ import EarthCanvas from './canvas/Earth'
 function Contact() {
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`container h-full flex xl:flex-row flex-col-reverse gap-10 overflow-hidden overflow-x-scroll scrollbar-hide`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -19,7 +19,7 @@ function Contact() {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          className='mt-12 flex flex-col gap-8'
+          className=' flex flex-col gap-4 pb-14 sm:pb-0'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
@@ -27,7 +27,7 @@ function Contact() {
               type='text'
               name='name'
               placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-2 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -36,13 +36,13 @@ function Contact() {
               type='email'
               name='email'
               placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-2 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
-              rows={7}
+              rows={4}
               name='message'
               placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
