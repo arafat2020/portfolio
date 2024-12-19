@@ -4,7 +4,7 @@ import React from "react";
 
 export function SparkleHeading({title}:{title:string}) {
   return (
-    <div className="h-[10rem] w-full  flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="h-[6rem] w-full  flex flex-col items-center justify-center overflow-hidden rounded-md">
       <h1 className="md:text-5xl text-2xl lg:text-7xl font-bold text-center text-white relative z-20">
         {title}
       </h1>
