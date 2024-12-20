@@ -18,9 +18,13 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		colors: {}
-  	}
+  		colors: {},
+		screens:{
+			xsm:"400px"
+		}
+  	},
   },
+
   plugins: [require("tailwindcss-animate"),require('tailwind-scrollbar-hide')],
 }
 export default config

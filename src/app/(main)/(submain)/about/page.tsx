@@ -21,14 +21,14 @@ function About() {
         <motion.img
           src="https://scontent.fdac20-1.fna.fbcdn.net/v/t39.30808-6/330287676_220977707127287_1111664057085946405_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEnCV3UbYAEvHXPirGxGjDzDw4hCDLqoUcPDiEIMuqhR03TApu7MPLyx2usnoif5SZ8Me1ubzWCrZOVDzWsY-XN&_nc_ohc=9QIsRQiledMQ7kNvgH_qaYh&_nc_zt=23&_nc_ht=scontent.fdac20-1.fna&_nc_gid=Ak97bOLrlqG6yqCuqwtKrU-&oh=00_AYAo6zecA7XlCc98TiebWA8ni8m1f2XVyvvvzbSfrSG07g&oe=6769FECF"
           alt="Your Name"
-          className="w-40 h-40 rounded-full shadow-lg mb-4"
+          className="h-20 w-20 xsm:w-40 xsm:h-40 rounded-full shadow-lg mb-4"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
         />
 
         {/* About Description */}
         <motion.h1
-          className="text-3xl font-bold mb-2"
+          className="text-2xl xsm:text-3xl font-bold mb-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
@@ -36,7 +36,7 @@ function About() {
           Hi, I&apos;m Arafat Mannan
         </motion.h1>
         <motion.p
-          className="text-center text-lg leading-relaxed"
+          className="text-center text-[1rem] xsm:text-lg leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}

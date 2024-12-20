@@ -57,7 +57,7 @@ function FloatingNav() {
     }
   ]
   return (
-    <div className='absolute z-[999] flex sm:flex-col justify-around sm:justify-normal sm:space-y-3 p-6 sm:p-2 sm:top-1/2 transform sm:-translate-y-1/2 sm:right-6 w-full sm:w-auto bottom-0 right-0 bg-slate-800/50 sm:rounded-full'>
+    <div className='absolute z-[999] flex sm:flex-col justify-around sm:justify-normal sm:space-y-3 p-3 xsm:p-6 sm:p-2 sm:top-1/2 transform sm:-translate-y-1/2 sm:right-6 w-full sm:w-auto bottom-0 right-0 bg-slate-800/50 sm:rounded-full'>
       {
         Links.map(link => (
           <Link key={link.name} href={link.href}>

@@ -19,7 +19,7 @@ function Contact() {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          className=' flex flex-col gap-4 pb-14 sm:pb-0'
+          className=' flex flex-col gap-2 xsm:gap-4 pb-14 sm:pb-0'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
