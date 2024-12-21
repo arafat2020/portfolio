@@ -31,20 +31,20 @@ function Services() {
   ];
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center p-4 overflow-y-scroll scrollbar-hide">
+    <div className="w-full h-full flex flex-col items-center justify-center p-4 overflow-y-scroll scrollbar-hide ">
       <motion.div
         className="max-w-screen-md "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        <div className='mt-[340px] xsm:mt-[180px] sm:mt-0'></div>
+        <div className='mt-[200px] xsm:mt-0 sm:mt-0 '></div>
         <SparkleHeading title="Services"/>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-14 sm:pb-0">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="border-[3px] border-slate-900/60 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center space-x-4"
+              className="border-[3px] border-b-slate-900/60 border-r-cyan-900/30 border-t-transparent border-l-transparent rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center space-x-4 bg-zinc-900/50"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
