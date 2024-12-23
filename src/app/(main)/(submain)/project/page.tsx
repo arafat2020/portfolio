@@ -3,6 +3,7 @@
 import React from "react";
 import { ProjectCard } from "../../_components/ProjectCard";
 import { SparkleHeading } from "../../_components/Sparklejeading";
+import { Vortex } from "@/components/ui/vortex";
 
 export default function MyProjectsPage() {
   const projects = [
@@ -40,7 +41,7 @@ export default function MyProjectsPage() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12 h-full overflow-y-scroll scrollbar-hide">
+    <Vortex className="container mx-auto px-4 py-12 h-full overflow-y-scroll scrollbar-hide">
       <SparkleHeading title="My Projects"/>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
@@ -55,6 +56,6 @@ export default function MyProjectsPage() {
           />
         ))}
       </div>
-    </div>
+    </Vortex>
   );
 }
